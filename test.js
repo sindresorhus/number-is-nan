@@ -1,20 +1,19 @@
 'use strict';
-var test = require('ava');
+const test = require('ava');
 Number.isNaN = undefined;
-var numberIsNan = require('./');
+const fn = require('./');
 
-test(function (t) {
-	t.assert(numberIsNan(NaN));
-	t.assert(!numberIsNan());
-	t.assert(!numberIsNan(true));
-	t.assert(!numberIsNan(false));
-	t.assert(!numberIsNan(null));
-	t.assert(!numberIsNan(0));
-	t.assert(!numberIsNan(Infinity));
-	t.assert(!numberIsNan(-Infinity));
-	t.assert(!numberIsNan(''));
-	t.assert(!numberIsNan('unicorn'));
-	t.assert(!numberIsNan({}));
-	t.assert(!numberIsNan([]));
-	t.end();
+test(t => {
+	t.true(fn(NaN));
+	t.false(fn());
+	t.false(fn(true));
+	t.false(fn(false));
+	t.false(fn(null));
+	t.false(fn(0));
+	t.false(fn(Infinity));
+	t.false(fn(-Infinity));
+	t.false(fn(''));
+	t.false(fn('unicorn'));
+	t.false(fn({}));
+	t.false(fn([]));
 });
