@@ -1,7 +1,7 @@
 {
   "name": "number-is-nan",
   "version": "1.0.0",
-  "description": "ES6 Number.isNaN() ponyfill",
+  "description": "ES2015 Number.isNaN() ponyfill",
   "license": "MIT",
   "repository": "sindresorhus/number-is-nan",
   "author": {
@@ -19,10 +19,8 @@
     "index.js"
   ],
   "keywords": [
-    "es6",
     "es2015",
     "ecmascript",
-    "harmony",
     "ponyfill",
     "polyfill",
     "shim",
