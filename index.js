@@ -1,4 +1,4 @@
 'use strict';
-module.exports = Number.isNaN || function (x) {
-	return x !== x;
+module.exports = Number.isNaN || function (value) {
+	return typeof value === 'number' && isNaN(value);
 };
