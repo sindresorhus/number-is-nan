@@ -1,7 +1,7 @@
 {
   "name": "number-is-nan",
   "version": "1.0.1",
-  "description": "ES2015 Number.isNaN() ponyfill",
+  "description": "ES2015 Number.isNaN() polyfill",
   "license": "MIT",
   "repository": "sindresorhus/number-is-nan",
   "author": {
