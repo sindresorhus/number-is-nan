@@ -1,4 +1,4 @@
 'use strict';
-module.exports = Number.isNaN || function (x) {
+module.exports = function (x) {
 	return x !== x;
 };
