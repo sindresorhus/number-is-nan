@@ -30,6 +30,6 @@
     "not"
   ],
   "devDependencies": {
-    "ava": "*"
+    "ava": "^3.2.0"
   }
 }
