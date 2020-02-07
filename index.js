@@ -1,4 +1,5 @@
 'use strict';
-module.exports = function(x) {
-	return typeof x === 'number' && x !== x;
+
+module.exports = function (value) {
+	return typeof value === 'number' && value !== value;
 };

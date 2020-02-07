@@ -2,13 +2,11 @@
 
 > ES2015 [`Number.isNaN()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN) [ponyfill](https://ponyfill.com)
 
-
 ## Install
 
 ```
 $ npm install number-is-nan
 ```
-
 
 ## Usage
 
@@ -21,7 +19,6 @@ numberIsNan(NaN);
 numberIsNan('unicorn');
 //=> false
 ```
-
 
 ---
 
