@@ -3,7 +3,7 @@ const test = require('ava');
 Number.isNaN = undefined;
 const fn = require('./');
 
-test(t => {
+test('NaN tests', t => {
 	t.true(fn(NaN));
 	t.false(fn());
 	t.false(fn(true));
