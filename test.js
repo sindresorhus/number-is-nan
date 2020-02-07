@@ -1,9 +1,9 @@
-"use strict";
-const test = require("ava");
+'use strict';
+const test = require('ava');
 Number.isNaN = undefined;
-const fn = require("./");
+const fn = require('./');
 
-test("NaN tests", t => {
+test('NaN tests', t => {
 	t.true(fn(NaN));
 	t.false(fn());
 	t.false(fn(true));
@@ -12,8 +12,8 @@ test("NaN tests", t => {
 	t.false(fn(0));
 	t.false(fn(Infinity));
 	t.false(fn(-Infinity));
-	t.false(fn(""));
-	t.false(fn("unicorn"));
+	t.false(fn(''));
+	t.false(fn('unicorn'));
 	t.false(fn({}));
 	t.false(fn([]));
 });
