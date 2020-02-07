@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 module.exports = function(x) {
-	return typeof x === "number" && x !== x;
+	return typeof x === 'number' && x !== x;
 };
